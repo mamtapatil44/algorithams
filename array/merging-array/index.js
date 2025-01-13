@@ -29,7 +29,7 @@ console.log("combined array by remove duplication==== ", comArray)
 function combinedArrayWithRemovingDuplication(arr1, arr2) {
     let combinedArray = []
     for (let i = 0; i < arr1.length; i++) {
-        if (!combinedArray.includes(arr1[1])) {
+        if (!combinedArray.includes(arr1[i])) {
             combinedArray.push(arr1[i])
         }
     }
