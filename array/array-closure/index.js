@@ -6,14 +6,12 @@ function createClosure() {
     for (let i = 0; i < 3; i++) {
         let obj = { value: i }
         arr1.push(obj);
+        (function (currentObj) {
+            currentObj.printValue = () => {
+                console.log("value ", currentObj.value)
+            }
 
-
-            (function (currentObj) {
-                currentObj.printValue = () => {
-                    console.log("value ", currentObj.value)
-                }
-
-            })(obj)
+        })(obj)
 
     }
     return arr1;
