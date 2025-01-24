@@ -41,7 +41,7 @@ for(let key in obj){
 }
 
 // find length of object
-console.log("length==== ",  Object.keys(obj).length);
+console.log("length==== ",     Object.keys(obj).length);
 
 // merge two obj
 let obj1 = {name:"mamta"} ;
