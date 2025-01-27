@@ -50,4 +50,22 @@ let mergedObj = {...obj1, ...obj2};
 console.log("mergedObj==== ",mergedObj);
 
 
+// define object:
+// object is realworld entity,it encasulated related data and behaviour with structure.it mainly stores the data in key value pair.
+// key is string and value should be any data type
+
+
+// classes:
+// class is blueprint of object or template of that.which provide resulable struction for same proprties and actions
+// classes encouages modularity and resulability of code
+// we can create many instances or objects of one class.
+
+
+// functions:
+// functions are self contained block.Used to exacute the code and logic .We can resuse the function multiple times
+// tfuntions takes input as para and return output also.
+// they enable developers to breakdown complex logic into smaller chuncks, ehich increses redabilty, modularity and maintanabilty of code.
+
+
+
 
