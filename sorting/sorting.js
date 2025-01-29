@@ -25,4 +25,62 @@ function bubbleSort(arr) {
 
 const result = bubbleSort([5, 3, 8, 4, 2]);
 console.log("asc bubble sort=== ",result)
+console.log("===============================================================================")
 
+// selection sort
+// iterates array n-1 times, but swap only with smallest element only once for each ietration
+// consider first element is small
+//  here we inner loop will starts  j=i+1;
+
+function selectionSort(arr){
+    const n = arr.length;
+    for(let i= 0 ; i <n-1;i++){
+        let smallestIndex = i;
+
+        for(let j =i+1; j<n;j++){
+            if(arr[j] < arr[smallestIndex]){
+                smallestIndex = j;
+            }
+
+        }
+
+        if(smallestIndex !== i){
+            [arr[i],arr[smallestIndex]]= [arr[smallestIndex],arr[i]]
+        }
+    }
+
+    return arr;
+
+}
+
+const resSelectionsort = selectionSort([5, 3, 8, 4, 2])
+console.log("asc slection sort=== ",resSelectionsort)
+console.log("===============================================================================")
+
+
+// insertion sort
+// comparison alogorithm : it will work on sort or unsort array
+// first index element should be considered as sorted for first iertion
+// that element will compare with unsorted array and each elemt push back and small element should be at correct position of sorted array
+
+function insertionSort(arr){
+    const n = arr.length;
+
+    for(let i =1 ; i < n;i++){
+        key = arr[i];
+        console.log("key ",key)
+        while(j  >= 0 && key < arr[j]){
+            arr[j+1] =arr[j];
+            j--
+
+        }
+          arr[i] =key;
+    }
+
+    return arr;
+
+}
+
+const resInsertsort = selectionSort([5, 3, 8, 4, 2])
+console.log("asc insrtion sort=== ",resInsertsort)
+console.log("===============================================================================")
