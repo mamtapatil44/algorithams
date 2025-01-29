@@ -7,4 +7,4 @@
 
  }
 
- console.log("paswword mask ",passwordMasking("Mamta"))
+ console.log("paswword mask ",passwordMasking("abc123"))
