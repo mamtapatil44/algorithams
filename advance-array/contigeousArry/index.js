@@ -24,6 +24,7 @@ function brutForceSubArray(arr) {
 brutForceSubArray([3, -4, 5, 4, -1, 7, -8])
 
 console.log("===============================================")
+// dynamic programming algortham :time complexity O(N) :its linear so optimized
 function kadaneAlgorithamArray(arr) {
     let n = arr.length;
     maxSum = 0;
